@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Browser Storage Explorer",
+  "description": "Inspect Local Storage, Session Storage and Cookies.",
+  "version": "1.0",
+
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "scripting",
+    "storage",
+    "cookies"
+  ],
+
+  "host_permissions": [
+    "<all_urls>"
+  ],
+
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

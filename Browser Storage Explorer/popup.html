@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Browser Storage Explorer</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+    <h2>🗀 Browser Storage Explorer</h2>
+
+    <div class="buttons">
+    <button id="loadBtn">Load Storage</button>
+    <button id="exportBtn">Export JSON</button>
+</div>
+
+    <input
+        type="text"
+        id="search"
+        placeholder="🔍 Search by key, value or storage type...">
+    <div id="summary"></div>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Type</th>
+                <th>Key</th>
+                <th>Value</th>
+                <th>Size</th>
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="tableBody">
+
+        </tbody>
+
+    </table>
+
+</body>
+
+<script src="popup.js"></script>
+
+</html>
