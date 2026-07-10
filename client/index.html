@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Your Documents</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <h2>📄 Ask Your Documents</h2>
+
+        <label class="upload-btn">
+            Upload PDF
+            <input type="file" id="pdfInput" accept=".pdf" hidden>
+        </label>
+
+        <div class="documents">
+
+            <h3>Uploaded Documents</h3>
+
+            <ul id="fileList">
+
+                <li>No documents uploaded</li>
+
+            </ul>
+
+        </div>
+
+    </aside>
+
+    <main class="chat-section">
+
+        <div class="chat-header">
+
+            AI Document Assistant
+
+        </div>
+
+        <div class="chat-box" id="chatBox">
+
+            <div class="bot-message">
+
+                👋 Welcome! Upload a PDF and ask anything about it.
+
+            </div>
+
+        </div>
+
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="question"
+                placeholder="Ask a question about your document..."
+            >
+
+            <button id="sendBtn">
+                Send
+            </button>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
